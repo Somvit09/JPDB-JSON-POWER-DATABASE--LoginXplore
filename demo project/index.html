@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+1. To JPDB functions - https://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js
+2. TO visualize JPDB use -- http://api.login2explore.com:5577/user/dashboard.html
+3. To interact with api use API Talend Tester Chrome extention
+-->
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h2>Vertical (basic) form</h2>
+    <form id="empForm" method="get">
+      <div class="form-group">
+        <span><label for="empId">Employee ID:</label></span>
+        <input type="text" class="form-control" name="empId" id="empId"
+        placeholder="Enter Employee ID"  onchange="getEmp()" required>
+      </div>
+      <div class="form-group">
+        <label for="empName">Employee Name:</label>
+        <input type="text" class="form-control" id="empName"
+        placeholder="Enter Employee Name" name="empName" required>
+      </div>
+      <div class="form-group">
+        <span><label for="empSalary">Employee Salary:</label> <label id="empIdSalary">
+        </label></span>
+        <input type="text" class="form-control" name="empSalary" id="empSalary"
+        placeholder="Enter Employee Salary" required>
+      </div>
+      <div class="form-group">
+        <span><label for="emp HRA">Employee HRA:</label> <label id="empIdHRA">
+        </label></span>
+        <input type="text" class="form-control" name="empHRA" id="empHRA"
+        placeholder="Enter Employee HRA" required>
+      </div>
+      <div class="form-group">
+        <label for="empDA">Employee DA:</label>
+        <input type="text" class="form-control" id="empDA"
+        placeholder="Enter Employee DA" name="empDA" required>
+      </div>
+      <div class="form-group">
+        <label for="empDeduction">Employee Deduction:</label>
+        <input type="text" class="form-control" id="empDeduction"
+        placeholder="Enter Employee Deduction" name="empDeduction" required>
+      </div>
+      <input type="button" class="btn btn-primary" id="empSave" value="Save"
+      onclick="saveEmployee();" disabled>
+      <input type="button" class="btn btn-primary" id="empChange" value="Change"
+      onclick="changeEmployee();" disabled>
+      <input type="button" class="btn btn-primary" id="empReset" value="Reset"
+      onclick="resetForm();" disabled>
+    </form>
+  </div>
+  <script src="index.js"></script>
+  <script type="text/javascript" src='https://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js'></script>
+
+</body>
+</html>
